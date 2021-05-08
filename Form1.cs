@@ -10,79 +10,109 @@ using System.Windows.Forms;
 
 namespace CalculatorOOP
 {
-    public partial class Form1 : Form
+    public partial class basic_calculator : Form
     {
-        public Form1()
+        public basic_calculator()
         {
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void calculation_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void number_one_Click(object sender, EventArgs e)
+        {
+
+        }
+        
+        private void number_two_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void number_three_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void number_four_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button6_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void button7_Click(object sender, EventArgs e)
+        private void number_five_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void number_six_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button10_Click(object sender, EventArgs e)
+        private void number_seven_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button18_Click(object sender, EventArgs e)
+        private void number_eight_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button15_Click(object sender, EventArgs e)
+        private void number_nine_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button9_Click(object sender, EventArgs e)
+        private void number_zero_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button10_Click_1(object sender, EventArgs e)
+        private void decimal_point_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button3_Click_1(object sender, EventArgs e)
+        private void addition_Click(object sender, EventArgs e)
+        {
+
+        }
+        
+        private void subtraction_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void multiplication_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void division_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void clear_all_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void del_text_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void answer_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void basic_calculator_Load(object sender, EventArgs e)
         {
 
         }
