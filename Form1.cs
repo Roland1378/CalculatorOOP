@@ -11,13 +11,13 @@ using System.Windows.Forms;
 namespace CalculatorOOP
 {
     public partial class basic_calculator : Form
-
+    {
         string user_input = string.Empty;
         string operand_one = string.Empty;
         string operand_two = string.Empty;
         char operation;
-        double answer = 0,0;
-    {
+        double equals = 0.0;
+    
         public basic_calculator()
         {
             InitializeComponent();
@@ -30,7 +30,7 @@ namespace CalculatorOOP
 
         private void number_one_Click(object sender, EventArgs e)
         {
-
+            
         }
         
         private void number_two_Click(object sender, EventArgs e)
