@@ -11,6 +11,12 @@ using System.Windows.Forms;
 namespace CalculatorOOP
 {
     public partial class basic_calculator : Form
+
+        string user_input = string.Empty;
+        string operand_one = string.Empty;
+        string operand_two = string.Empty;
+        char operation;
+        double answer = 0,0;
     {
         public basic_calculator()
         {
