@@ -29,7 +29,6 @@ namespace CalculatorOOP
         /// </summary>
         private void InitializeComponent()
         {
-            this.calculation = new System.Windows.Forms.TextBox();
             this.number_one = new System.Windows.Forms.Button();
             this.number_four = new System.Windows.Forms.Button();
             this.number_seven = new System.Windows.Forms.Button();
@@ -48,17 +47,8 @@ namespace CalculatorOOP
             this.division = new System.Windows.Forms.Button();
             this.subtraction = new System.Windows.Forms.Button();
             this.del_text = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // calculation
-            // 
-            this.calculation.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.calculation.Location = new System.Drawing.Point(12, 11);
-            this.calculation.Name = "calculation";
-            this.calculation.Size = new System.Drawing.Size(499, 74);
-            this.calculation.TabIndex = 0;
-            this.calculation.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.calculation.TextChanged += new System.EventHandler(this.calculation_TextChanged);
             // 
             // number_one
             // 
@@ -261,11 +251,22 @@ namespace CalculatorOOP
             this.del_text.UseVisualStyleBackColor = false;
             this.del_text.Click += new System.EventHandler(this.del_text_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 34F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox1.Location = new System.Drawing.Point(14, 5);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(496, 89);
+            this.textBox1.TabIndex = 34;
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // basic_calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(525, 576);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.answer);
             this.Controls.Add(this.division);
             this.Controls.Add(this.subtraction);
@@ -284,7 +285,6 @@ namespace CalculatorOOP
             this.Controls.Add(this.number_seven);
             this.Controls.Add(this.number_four);
             this.Controls.Add(this.number_one);
-            this.Controls.Add(this.calculation);
             this.Name = "basic_calculator";
             this.Text = "CALCULATOR";
             this.Load += new System.EventHandler(this.basic_calculator_Load);
@@ -294,9 +294,6 @@ namespace CalculatorOOP
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox calculation;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button number_one;
         private System.Windows.Forms.Button number_four;
         private System.Windows.Forms.Button number_seven;
@@ -315,6 +312,7 @@ namespace CalculatorOOP
         private System.Windows.Forms.Button division;
         private System.Windows.Forms.Button subtraction;
         private System.Windows.Forms.Button del_text;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
