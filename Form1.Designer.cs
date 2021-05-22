@@ -46,13 +46,14 @@ namespace CalculatorOOP
             this.division = new System.Windows.Forms.Button();
             this.subtraction = new System.Windows.Forms.Button();
             this.del_text = new System.Windows.Forms.Button();
-            this.calculation = new System.Windows.Forms.TextBox();
+            this.ans_screen = new System.Windows.Forms.TextBox();
+            this.eqn_screen = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // number_one
             // 
             this.number_one.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.number_one.Location = new System.Drawing.Point(12, 101);
+            this.number_one.Location = new System.Drawing.Point(13, 112);
             this.number_one.Name = "number_one";
             this.number_one.Size = new System.Drawing.Size(95, 110);
             this.number_one.TabIndex = 1;
@@ -63,7 +64,7 @@ namespace CalculatorOOP
             // number_four
             // 
             this.number_four.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.number_four.Location = new System.Drawing.Point(12, 217);
+            this.number_four.Location = new System.Drawing.Point(13, 228);
             this.number_four.Name = "number_four";
             this.number_four.Size = new System.Drawing.Size(95, 110);
             this.number_four.TabIndex = 5;
@@ -74,7 +75,7 @@ namespace CalculatorOOP
             // number_seven
             // 
             this.number_seven.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.number_seven.Location = new System.Drawing.Point(12, 333);
+            this.number_seven.Location = new System.Drawing.Point(13, 344);
             this.number_seven.Name = "number_seven";
             this.number_seven.Size = new System.Drawing.Size(95, 110);
             this.number_seven.TabIndex = 9;
@@ -85,7 +86,7 @@ namespace CalculatorOOP
             // number_zero
             // 
             this.number_zero.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.number_zero.Location = new System.Drawing.Point(12, 449);
+            this.number_zero.Location = new System.Drawing.Point(13, 460);
             this.number_zero.Name = "number_zero";
             this.number_zero.Size = new System.Drawing.Size(95, 110);
             this.number_zero.TabIndex = 13;
@@ -96,7 +97,7 @@ namespace CalculatorOOP
             // decimal_point
             // 
             this.decimal_point.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.decimal_point.Location = new System.Drawing.Point(113, 449);
+            this.decimal_point.Location = new System.Drawing.Point(114, 460);
             this.decimal_point.Name = "decimal_point";
             this.decimal_point.Size = new System.Drawing.Size(95, 110);
             this.decimal_point.TabIndex = 21;
@@ -107,7 +108,7 @@ namespace CalculatorOOP
             // number_eight
             // 
             this.number_eight.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.number_eight.Location = new System.Drawing.Point(113, 333);
+            this.number_eight.Location = new System.Drawing.Point(114, 344);
             this.number_eight.Name = "number_eight";
             this.number_eight.Size = new System.Drawing.Size(95, 110);
             this.number_eight.TabIndex = 20;
@@ -118,7 +119,7 @@ namespace CalculatorOOP
             // number_five
             // 
             this.number_five.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.number_five.Location = new System.Drawing.Point(113, 217);
+            this.number_five.Location = new System.Drawing.Point(114, 228);
             this.number_five.Name = "number_five";
             this.number_five.Size = new System.Drawing.Size(95, 110);
             this.number_five.TabIndex = 19;
@@ -129,7 +130,7 @@ namespace CalculatorOOP
             // number_two
             // 
             this.number_two.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.number_two.Location = new System.Drawing.Point(113, 101);
+            this.number_two.Location = new System.Drawing.Point(114, 112);
             this.number_two.Name = "number_two";
             this.number_two.Size = new System.Drawing.Size(95, 110);
             this.number_two.TabIndex = 18;
@@ -140,7 +141,7 @@ namespace CalculatorOOP
             // multiplication
             // 
             this.multiplication.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.multiplication.Location = new System.Drawing.Point(315, 333);
+            this.multiplication.Location = new System.Drawing.Point(316, 344);
             this.multiplication.Name = "multiplication";
             this.multiplication.Size = new System.Drawing.Size(95, 110);
             this.multiplication.TabIndex = 28;
@@ -151,7 +152,7 @@ namespace CalculatorOOP
             // addition
             // 
             this.addition.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.addition.Location = new System.Drawing.Point(315, 217);
+            this.addition.Location = new System.Drawing.Point(316, 228);
             this.addition.Name = "addition";
             this.addition.Size = new System.Drawing.Size(95, 110);
             this.addition.TabIndex = 27;
@@ -162,7 +163,7 @@ namespace CalculatorOOP
             // number_nine
             // 
             this.number_nine.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.number_nine.Location = new System.Drawing.Point(214, 333);
+            this.number_nine.Location = new System.Drawing.Point(215, 344);
             this.number_nine.Name = "number_nine";
             this.number_nine.Size = new System.Drawing.Size(95, 110);
             this.number_nine.TabIndex = 24;
@@ -173,7 +174,7 @@ namespace CalculatorOOP
             // number_six
             // 
             this.number_six.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.number_six.Location = new System.Drawing.Point(214, 217);
+            this.number_six.Location = new System.Drawing.Point(215, 228);
             this.number_six.Name = "number_six";
             this.number_six.Size = new System.Drawing.Size(95, 110);
             this.number_six.TabIndex = 23;
@@ -184,7 +185,7 @@ namespace CalculatorOOP
             // number_three
             // 
             this.number_three.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.number_three.Location = new System.Drawing.Point(214, 101);
+            this.number_three.Location = new System.Drawing.Point(215, 112);
             this.number_three.Name = "number_three";
             this.number_three.Size = new System.Drawing.Size(95, 110);
             this.number_three.TabIndex = 22;
@@ -196,7 +197,7 @@ namespace CalculatorOOP
             // 
             this.answer.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.answer.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.answer.Location = new System.Drawing.Point(214, 449);
+            this.answer.Location = new System.Drawing.Point(215, 460);
             this.answer.Name = "answer";
             this.answer.Size = new System.Drawing.Size(297, 110);
             this.answer.TabIndex = 33;
@@ -207,7 +208,7 @@ namespace CalculatorOOP
             // division
             // 
             this.division.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.division.Location = new System.Drawing.Point(416, 333);
+            this.division.Location = new System.Drawing.Point(417, 344);
             this.division.Name = "division";
             this.division.Size = new System.Drawing.Size(95, 110);
             this.division.TabIndex = 32;
@@ -218,7 +219,7 @@ namespace CalculatorOOP
             // subtraction
             // 
             this.subtraction.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.subtraction.Location = new System.Drawing.Point(416, 217);
+            this.subtraction.Location = new System.Drawing.Point(417, 228);
             this.subtraction.Name = "subtraction";
             this.subtraction.Size = new System.Drawing.Size(95, 110);
             this.subtraction.TabIndex = 31;
@@ -230,7 +231,7 @@ namespace CalculatorOOP
             // 
             this.del_text.BackColor = System.Drawing.Color.LightCoral;
             this.del_text.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.del_text.Location = new System.Drawing.Point(315, 101);
+            this.del_text.Location = new System.Drawing.Point(316, 112);
             this.del_text.Name = "del_text";
             this.del_text.Size = new System.Drawing.Size(196, 110);
             this.del_text.TabIndex = 30;
@@ -238,22 +239,33 @@ namespace CalculatorOOP
             this.del_text.UseVisualStyleBackColor = false;
             this.del_text.Click += new System.EventHandler(this.del_text_Click);
             // 
-            // calculation
+            // ans_screen
             // 
-            this.calculation.Font = new System.Drawing.Font("Segoe UI", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.calculation.Location = new System.Drawing.Point(14, 5);
-            this.calculation.Multiline = true;
-            this.calculation.Name = "calculation";
-            this.calculation.Size = new System.Drawing.Size(496, 89);
-            this.calculation.TabIndex = 34;
-            this.calculation.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.ans_screen.Font = new System.Drawing.Font("Segoe UI", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ans_screen.Location = new System.Drawing.Point(13, 37);
+            this.ans_screen.Name = "ans_screen";
+            this.ans_screen.Size = new System.Drawing.Size(496, 70);
+            this.ans_screen.TabIndex = 34;
+            this.ans_screen.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // eqn_screen
+            // 
+            this.eqn_screen.BackColor = System.Drawing.SystemColors.Control;
+            this.eqn_screen.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.eqn_screen.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.eqn_screen.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.eqn_screen.Location = new System.Drawing.Point(13, 3);
+            this.eqn_screen.Name = "eqn_screen";
+            this.eqn_screen.Size = new System.Drawing.Size(496, 25);
+            this.eqn_screen.TabIndex = 35;
             // 
             // basic_calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(525, 576);
-            this.Controls.Add(this.calculation);
+            this.Controls.Add(this.eqn_screen);
+            this.Controls.Add(this.ans_screen);
             this.Controls.Add(this.answer);
             this.Controls.Add(this.division);
             this.Controls.Add(this.subtraction);
@@ -297,7 +309,8 @@ namespace CalculatorOOP
         private System.Windows.Forms.Button division;
         private System.Windows.Forms.Button subtraction;
         private System.Windows.Forms.Button del_text;
-        private System.Windows.Forms.TextBox calculation;
+        private System.Windows.Forms.TextBox ans_screen;
+        private System.Windows.Forms.TextBox eqn_screen;
     }
 }
 
