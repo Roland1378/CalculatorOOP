@@ -47,6 +47,8 @@ namespace CalculatorOOP
             this.subtraction = new System.Windows.Forms.Button();
             this.del_text = new System.Windows.Forms.Button();
             this.calculation = new System.Windows.Forms.TextBox();
+            this.backspace = new System.Windows.Forms.Button();
+            this.eqn_screen = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // number_one
@@ -232,27 +234,50 @@ namespace CalculatorOOP
             this.del_text.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.del_text.Location = new System.Drawing.Point(315, 101);
             this.del_text.Name = "del_text";
-            this.del_text.Size = new System.Drawing.Size(196, 110);
+            this.del_text.Size = new System.Drawing.Size(95, 110);
             this.del_text.TabIndex = 30;
-            this.del_text.Text = "CLEAR";
+            this.del_text.Text = "CE";
             this.del_text.UseVisualStyleBackColor = false;
             this.del_text.Click += new System.EventHandler(this.del_text_Click);
             // 
             // calculation
             // 
-            this.calculation.Font = new System.Drawing.Font("Segoe UI", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.calculation.Location = new System.Drawing.Point(14, 5);
+            this.calculation.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.calculation.Location = new System.Drawing.Point(12, 9);
             this.calculation.Multiline = true;
             this.calculation.Name = "calculation";
-            this.calculation.Size = new System.Drawing.Size(496, 89);
+            this.calculation.Size = new System.Drawing.Size(496, 85);
             this.calculation.TabIndex = 34;
             this.calculation.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // backspace
+            // 
+            this.backspace.BackColor = System.Drawing.Color.LightCoral;
+            this.backspace.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.backspace.Location = new System.Drawing.Point(415, 100);
+            this.backspace.Name = "backspace";
+            this.backspace.Size = new System.Drawing.Size(95, 110);
+            this.backspace.TabIndex = 35;
+            this.backspace.Text = "BS";
+            this.backspace.UseVisualStyleBackColor = false;
+            this.backspace.Click += new System.EventHandler(this.backspace_Click);
+            // 
+            // eqn_screen
+            // 
+            this.eqn_screen.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.eqn_screen.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.eqn_screen.Location = new System.Drawing.Point(14, 70);
+            this.eqn_screen.Name = "eqn_screen";
+            this.eqn_screen.Size = new System.Drawing.Size(194, 20);
+            this.eqn_screen.TabIndex = 36;
             // 
             // basic_calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(525, 576);
+            this.Controls.Add(this.eqn_screen);
+            this.Controls.Add(this.backspace);
             this.Controls.Add(this.calculation);
             this.Controls.Add(this.answer);
             this.Controls.Add(this.division);
@@ -298,6 +323,8 @@ namespace CalculatorOOP
         private System.Windows.Forms.Button subtraction;
         private System.Windows.Forms.Button del_text;
         private System.Windows.Forms.TextBox calculation;
+        private System.Windows.Forms.Button backspace;
+        private System.Windows.Forms.TextBox eqn_screen;
     }
 }
 

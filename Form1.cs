@@ -80,7 +80,7 @@ namespace CalculatorOOP
 
         private void addition_Click(object sender, EventArgs e)
         {
-            calculation_one = user_input;
+            calculation_one = user_input + "+";
             operation = '+';
             user_input = string.Empty;
         }
@@ -110,6 +110,10 @@ namespace CalculatorOOP
 
         }
 
+        private void backspace_Click(object sender, EventArgs e)
+        {
+
+        }
         private void answer_Click(object sender, EventArgs e)
         {
 
@@ -119,5 +123,6 @@ namespace CalculatorOOP
         {
 
         }
+
     }
 }
