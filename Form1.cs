@@ -105,12 +105,6 @@ namespace CalculatorOOP
             operation = '/';
             user_input = string.Empty;
         }
-
-        private void clear_all_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void del_text_Click(object sender, EventArgs e)
         {
 

@@ -39,7 +39,6 @@ namespace CalculatorOOP
             this.number_two = new System.Windows.Forms.Button();
             this.multiplication = new System.Windows.Forms.Button();
             this.addition = new System.Windows.Forms.Button();
-            this.clear_all = new System.Windows.Forms.Button();
             this.number_nine = new System.Windows.Forms.Button();
             this.number_six = new System.Windows.Forms.Button();
             this.number_three = new System.Windows.Forms.Button();
@@ -47,7 +46,7 @@ namespace CalculatorOOP
             this.division = new System.Windows.Forms.Button();
             this.subtraction = new System.Windows.Forms.Button();
             this.del_text = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.calculation = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // number_one
@@ -160,18 +159,6 @@ namespace CalculatorOOP
             this.addition.UseVisualStyleBackColor = true;
             this.addition.Click += new System.EventHandler(this.addition_Click);
             // 
-            // clear_all
-            // 
-            this.clear_all.BackColor = System.Drawing.Color.LightCoral;
-            this.clear_all.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.clear_all.Location = new System.Drawing.Point(315, 101);
-            this.clear_all.Name = "clear_all";
-            this.clear_all.Size = new System.Drawing.Size(95, 110);
-            this.clear_all.TabIndex = 26;
-            this.clear_all.Text = "C";
-            this.clear_all.UseVisualStyleBackColor = false;
-            this.clear_all.Click += new System.EventHandler(this.clear_all_Click);
-            // 
             // number_nine
             // 
             this.number_nine.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -243,37 +230,36 @@ namespace CalculatorOOP
             // 
             this.del_text.BackColor = System.Drawing.Color.LightCoral;
             this.del_text.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.del_text.Location = new System.Drawing.Point(416, 101);
+            this.del_text.Location = new System.Drawing.Point(315, 101);
             this.del_text.Name = "del_text";
-            this.del_text.Size = new System.Drawing.Size(95, 110);
+            this.del_text.Size = new System.Drawing.Size(196, 110);
             this.del_text.TabIndex = 30;
-            this.del_text.Text = "Del";
+            this.del_text.Text = "CLEAR";
             this.del_text.UseVisualStyleBackColor = false;
             this.del_text.Click += new System.EventHandler(this.del_text_Click);
             // 
-            // textBox1
+            // calculation
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 34F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(14, 5);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(496, 89);
-            this.textBox1.TabIndex = 34;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.calculation.Font = new System.Drawing.Font("Segoe UI", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.calculation.Location = new System.Drawing.Point(14, 5);
+            this.calculation.Multiline = true;
+            this.calculation.Name = "calculation";
+            this.calculation.Size = new System.Drawing.Size(496, 89);
+            this.calculation.TabIndex = 34;
+            this.calculation.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // basic_calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(525, 576);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.calculation);
             this.Controls.Add(this.answer);
             this.Controls.Add(this.division);
             this.Controls.Add(this.subtraction);
             this.Controls.Add(this.del_text);
             this.Controls.Add(this.multiplication);
             this.Controls.Add(this.addition);
-            this.Controls.Add(this.clear_all);
             this.Controls.Add(this.number_nine);
             this.Controls.Add(this.number_six);
             this.Controls.Add(this.number_three);
@@ -304,7 +290,6 @@ namespace CalculatorOOP
         private System.Windows.Forms.Button number_two;
         private System.Windows.Forms.Button multiplication;
         private System.Windows.Forms.Button addition;
-        private System.Windows.Forms.Button clear_all;
         private System.Windows.Forms.Button number_nine;
         private System.Windows.Forms.Button number_six;
         private System.Windows.Forms.Button number_three;
@@ -312,7 +297,7 @@ namespace CalculatorOOP
         private System.Windows.Forms.Button division;
         private System.Windows.Forms.Button subtraction;
         private System.Windows.Forms.Button del_text;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox calculation;
     }
 }
 
