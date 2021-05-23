@@ -254,7 +254,7 @@ namespace CalculatorOOP
             this.eqn_screen.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.eqn_screen.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.eqn_screen.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.eqn_screen.Location = new System.Drawing.Point(13, 3);
+            this.eqn_screen.Location = new System.Drawing.Point(13, 7);
             this.eqn_screen.Name = "eqn_screen";
             this.eqn_screen.Size = new System.Drawing.Size(496, 25);
             this.eqn_screen.TabIndex = 35;

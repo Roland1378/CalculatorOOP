@@ -25,63 +25,88 @@ namespace CalculatorOOP
 
         private void number_one_Click(object sender, EventArgs e)
         {
+            this.ans_screen.Text = "";
             user_input += '1';
+            this.ans_screen.Text += user_input;
         }
 
         private void number_two_Click(object sender, EventArgs e)
         {
+            this.ans_screen.Text = "";
             user_input += '2';
+            this.ans_screen.Text += user_input;
         }
 
         private void number_three_Click(object sender, EventArgs e)
         {
+            this.ans_screen.Text = "";
             user_input += '3';
+            this.ans_screen.Text += user_input;
         }
 
         private void number_four_Click(object sender, EventArgs e)
         {
+            this.ans_screen.Text = "";
             user_input += '4';
+            this.ans_screen.Text += user_input;
         }
 
         private void number_five_Click(object sender, EventArgs e)
         {
+            this.ans_screen.Text = "";
             user_input += '5';
+            this.ans_screen.Text += user_input;
         }
 
         private void number_six_Click(object sender, EventArgs e)
         {
+            this.ans_screen.Text = "";
             user_input += '6';
+            this.ans_screen.Text += user_input;
         }
 
         private void number_seven_Click(object sender, EventArgs e)
         {
+            this.ans_screen.Text = "";
             user_input += '7';
+            this.ans_screen.Text += user_input;
         }
 
         private void number_eight_Click(object sender, EventArgs e)
         {
+            this.ans_screen.Text = "";
             user_input += '8';
+            this.ans_screen.Text += user_input;
         }
 
         private void number_nine_Click(object sender, EventArgs e)
         {
+            this.ans_screen.Text = "";
             user_input += '9';
+            this.ans_screen.Text += user_input;
         }
 
         private void number_zero_Click(object sender, EventArgs e)
         {
+            this.ans_screen.Text = "";
             user_input += '0';
+            this.ans_screen.Text += user_input;
         }
 
         private void decimal_point_Click(object sender, EventArgs e)
         {
+            this.ans_screen.Text = "";
             user_input += '.';
+            this.ans_screen.Text += user_input;
+            decimal_point.Enabled = false;
         }
 
         private void addition_Click(object sender, EventArgs e)
         {
             calculation_one = user_input;
             operation = '+';
+            this.ans_screen.Text = "+";
+            this.eqn_screen.Text = calculation_one + "" + operation;
             user_input = string.Empty;
         }
         
@@ -89,6 +114,8 @@ namespace CalculatorOOP
         {
             calculation_one = user_input;
             operation = '-';
+            this.ans_screen.Text = "-";
+            this.eqn_screen.Text = calculation_one + "" + operation;
             user_input = string.Empty;
         }
 
@@ -96,6 +123,8 @@ namespace CalculatorOOP
         {
             calculation_one = user_input;
             operation = '*';
+            this.ans_screen.Text = "*";
+            this.eqn_screen.Text = calculation_one + "" + operation;
             user_input = string.Empty;
         }
 
@@ -103,6 +132,8 @@ namespace CalculatorOOP
         {
             calculation_one = user_input;
             operation = '/';
+            this.ans_screen.Text = "/";
+            this.eqn_screen.Text = calculation_one + "" + operation;
             user_input = string.Empty;
         }
         private void del_text_Click(object sender, EventArgs e)
