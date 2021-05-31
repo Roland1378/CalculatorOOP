@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace CalculatorOOP
 {
+  
     public partial class basic_calculator : Form
     {
         string user_input = string.Empty;
@@ -17,10 +18,10 @@ namespace CalculatorOOP
         string calculation_two = string.Empty;
         char operation;
         double equals = 0.0;
-    
+
         public basic_calculator()
         {
-            InitializeComponent();
+                InitializeComponent();   
         }
 
         private void number_one_Click(object sender, EventArgs e)
@@ -28,6 +29,7 @@ namespace CalculatorOOP
             ans_screen.Text = "";
             user_input += '1';
             ans_screen.Text += user_input;
+
         }
 
         private void number_two_Click(object sender, EventArgs e)
@@ -108,8 +110,9 @@ namespace CalculatorOOP
             ans_screen.Text = "+";
             eqn_screen.Text = calculation_one + "" + operation;
             user_input = string.Empty;
+            decimal_point.Enabled = true;
         }
-        
+
         private void subtraction_Click(object sender, EventArgs e)
         {
             calculation_one = user_input;
@@ -117,6 +120,7 @@ namespace CalculatorOOP
             ans_screen.Text = "-";
             eqn_screen.Text = calculation_one + "" + operation;
             user_input = string.Empty;
+            decimal_point.Enabled = true;
         }
 
         private void multiplication_Click(object sender, EventArgs e)
@@ -126,6 +130,7 @@ namespace CalculatorOOP
             ans_screen.Text = "*";
             eqn_screen.Text = calculation_one + "" + operation;
             user_input = string.Empty;
+            decimal_point.Enabled = true;
         }
 
         private void division_Click(object sender, EventArgs e)
@@ -135,6 +140,7 @@ namespace CalculatorOOP
             ans_screen.Text = "/";
             eqn_screen.Text = calculation_one + "" + operation;
             user_input = string.Empty;
+            decimal_point.Enabled = true;
         }
         private void del_text_Click(object sender, EventArgs e)
         {
@@ -151,5 +157,6 @@ namespace CalculatorOOP
 
         }
     }
+
 }
 
