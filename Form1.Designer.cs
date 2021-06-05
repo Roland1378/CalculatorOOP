@@ -285,7 +285,6 @@ namespace CalculatorOOP
             this.Controls.Add(this.number_one);
             this.Name = "basic_calculator";
             this.Text = "CALCULATOR";
-            this.Load += new System.EventHandler(this.basic_calculator_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace CalculatorOOP
 {
-  
+
     public partial class basic_calculator : Form
     {
         string user_input = string.Empty;
@@ -21,7 +21,7 @@ namespace CalculatorOOP
 
         public basic_calculator()
         {
-                InitializeComponent();   
+            InitializeComponent();
         }
 
         private void number_one_Click(object sender, EventArgs e)
@@ -153,14 +153,41 @@ namespace CalculatorOOP
 
         private void answer_Click(object sender, EventArgs e)
         {
+            decimal_point.Enabled = true;
+            calculation_two = user_input;
+            double input1, input2;
+            double.TryParse(calculation_one, out input1);
+            double.TryParse(calculation_two, out input2);
 
-        }
+            if (operation == '+')
+            {
+                equals = input1 + input2;
+                ans_screen.Text = equals.ToString();
+            }
+            else if (operation == '-')
+            {
+                equals = input1 - input2;
+                ans_screen.Text = equals.ToString();
+            }
+            else if (operation == '*')
+            {
+                equals = input1 * input2;
+                ans_screen.Text = equals.ToString();
+            }
+            else if (operation == '/')
+            {
+                if (input2 != 0)
+                {
+                    equals = input1 / input2;
+                    ans_screen.Text = equals.ToString();
+                }
+                else
+                {
+                    ans_screen.Text = "Cannot Divide By Zero";
 
-        private void basic_calculator_Load(object sender, EventArgs e)
-        {
-
+                }
+            }
         }
     }
-
 }
 
