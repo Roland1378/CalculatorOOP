@@ -144,7 +144,11 @@ namespace CalculatorOOP
         }
         private void del_text_Click(object sender, EventArgs e)
         {
-
+            ans_screen.Text = "";
+            eqn_screen.Text = "";
+            user_input = string.Empty;
+            calculation_one = string.Empty;
+            calculation_two = string.Empty;
         }
 
         private void answer_Click(object sender, EventArgs e)
