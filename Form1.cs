@@ -163,16 +163,22 @@ namespace CalculatorOOP
             {
                 equals = input1 + input2;
                 ans_screen.Text = equals.ToString();
+                eqn_screen.Text = calculation_one + "+" + calculation_two + " = ";
+                user_input = equals.ToString();
             }
             else if (operation == '-')
             {
                 equals = input1 - input2;
                 ans_screen.Text = equals.ToString();
+                eqn_screen.Text = calculation_one + "-" + calculation_two + " = ";
+                user_input = equals.ToString();
             }
             else if (operation == '*')
             {
                 equals = input1 * input2;
                 ans_screen.Text = equals.ToString();
+                eqn_screen.Text = calculation_one + "*" + calculation_two + " = ";
+                user_input = equals.ToString();
             }
             else if (operation == '/')
             {
@@ -180,10 +186,13 @@ namespace CalculatorOOP
                 {
                     equals = input1 / input2;
                     ans_screen.Text = equals.ToString();
+                    eqn_screen.Text = calculation_one + "/" + calculation_two + " = ";
+                    user_input = equals.ToString();
                 }
                 else
                 {
                     ans_screen.Text = "Cannot Divide By Zero";
+                    eqn_screen.Text = calculation_one + "/" + "0" + " = " + "ERROR"; 
 
                 }
             }
