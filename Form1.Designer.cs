@@ -48,6 +48,8 @@ namespace CalculatorOOP
             this.del_text = new System.Windows.Forms.Button();
             this.ans_screen = new System.Windows.Forms.TextBox();
             this.eqn_screen = new System.Windows.Forms.TextBox();
+            this.backspace = new System.Windows.Forms.Button();
+            this.exponent = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // number_one
@@ -141,7 +143,7 @@ namespace CalculatorOOP
             // multiplication
             // 
             this.multiplication.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.multiplication.Location = new System.Drawing.Point(316, 344);
+            this.multiplication.Location = new System.Drawing.Point(317, 344);
             this.multiplication.Name = "multiplication";
             this.multiplication.Size = new System.Drawing.Size(95, 110);
             this.multiplication.TabIndex = 28;
@@ -197,9 +199,9 @@ namespace CalculatorOOP
             // 
             this.answer.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.answer.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.answer.Location = new System.Drawing.Point(215, 460);
+            this.answer.Location = new System.Drawing.Point(316, 459);
             this.answer.Name = "answer";
-            this.answer.Size = new System.Drawing.Size(297, 110);
+            this.answer.Size = new System.Drawing.Size(197, 110);
             this.answer.TabIndex = 33;
             this.answer.Text = "=";
             this.answer.UseVisualStyleBackColor = false;
@@ -208,7 +210,7 @@ namespace CalculatorOOP
             // division
             // 
             this.division.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.division.Location = new System.Drawing.Point(417, 344);
+            this.division.Location = new System.Drawing.Point(418, 344);
             this.division.Name = "division";
             this.division.Size = new System.Drawing.Size(95, 110);
             this.division.TabIndex = 32;
@@ -231,11 +233,11 @@ namespace CalculatorOOP
             // 
             this.del_text.BackColor = System.Drawing.Color.LightCoral;
             this.del_text.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.del_text.Location = new System.Drawing.Point(316, 112);
+            this.del_text.Location = new System.Drawing.Point(417, 112);
             this.del_text.Name = "del_text";
-            this.del_text.Size = new System.Drawing.Size(196, 110);
+            this.del_text.Size = new System.Drawing.Size(95, 110);
             this.del_text.TabIndex = 30;
-            this.del_text.Text = "CLEAR";
+            this.del_text.Text = "C";
             this.del_text.UseVisualStyleBackColor = false;
             this.del_text.Click += new System.EventHandler(this.del_text_Click);
             // 
@@ -259,11 +261,34 @@ namespace CalculatorOOP
             this.eqn_screen.Size = new System.Drawing.Size(496, 25);
             this.eqn_screen.TabIndex = 35;
             // 
+            // backspace
+            // 
+            this.backspace.BackColor = System.Drawing.Color.LightCoral;
+            this.backspace.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.backspace.Location = new System.Drawing.Point(316, 115);
+            this.backspace.Name = "backspace";
+            this.backspace.Size = new System.Drawing.Size(95, 110);
+            this.backspace.TabIndex = 36;
+            this.backspace.Text = "BS";
+            this.backspace.UseVisualStyleBackColor = false;
+            // 
+            // exponent
+            // 
+            this.exponent.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.exponent.Location = new System.Drawing.Point(215, 459);
+            this.exponent.Name = "exponent";
+            this.exponent.Size = new System.Drawing.Size(95, 110);
+            this.exponent.TabIndex = 37;
+            this.exponent.Text = "^";
+            this.exponent.UseVisualStyleBackColor = true;
+            // 
             // basic_calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(525, 576);
+            this.ClientSize = new System.Drawing.Size(525, 581);
+            this.Controls.Add(this.exponent);
+            this.Controls.Add(this.backspace);
             this.Controls.Add(this.eqn_screen);
             this.Controls.Add(this.ans_screen);
             this.Controls.Add(this.answer);
@@ -310,6 +335,8 @@ namespace CalculatorOOP
         private System.Windows.Forms.Button del_text;
         private System.Windows.Forms.TextBox ans_screen;
         private System.Windows.Forms.TextBox eqn_screen;
+        private System.Windows.Forms.Button backspace;
+        private System.Windows.Forms.Button exponent;
     }
 }
 
