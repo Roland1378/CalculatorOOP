@@ -265,12 +265,13 @@ namespace CalculatorOOP
             // 
             this.backspace.BackColor = System.Drawing.Color.LightCoral;
             this.backspace.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.backspace.Location = new System.Drawing.Point(316, 115);
+            this.backspace.Location = new System.Drawing.Point(316, 112);
             this.backspace.Name = "backspace";
             this.backspace.Size = new System.Drawing.Size(95, 110);
             this.backspace.TabIndex = 36;
             this.backspace.Text = "BS";
             this.backspace.UseVisualStyleBackColor = false;
+            this.backspace.Click += new System.EventHandler(this.backspace_Click);
             // 
             // exponent
             // 
@@ -281,6 +282,7 @@ namespace CalculatorOOP
             this.exponent.TabIndex = 37;
             this.exponent.Text = "^";
             this.exponent.UseVisualStyleBackColor = true;
+            this.exponent.Click += new System.EventHandler(this.exponent_Click);
             // 
             // basic_calculator
             // 

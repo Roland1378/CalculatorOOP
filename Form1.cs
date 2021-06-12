@@ -142,6 +142,14 @@ namespace CalculatorOOP
             user_input = string.Empty;
             decimal_point.Enabled = true;
         }
+        private void exponent_Click(object sender, EventArgs e)
+        {
+            calculation_one = user_input;
+            operation = '^';
+            ans_screen.Text = "^";
+            eqn_screen.Text = calculation_one + "" + operation;
+            user_input = string.Empty;
+        }
         private void del_text_Click(object sender, EventArgs e)
         {
             ans_screen.Text = "";
@@ -151,6 +159,17 @@ namespace CalculatorOOP
             calculation_two = string.Empty;
         }
 
+        private void backspace_Click(object sender, EventArgs e)
+        {
+            if (ans_screen.Text.Length > 0)
+            {
+                ans_screen.Text = ans_screen.Text.Remove(ans_screen.Text.Length - 1);
+                user_input = ans_screen.Text;
+            }
+            else
+                ans_screen.Text = "";
+        }
+ 
         private void answer_Click(object sender, EventArgs e)
         {
             decimal_point.Enabled = true;
@@ -192,9 +211,16 @@ namespace CalculatorOOP
                 else
                 {
                     ans_screen.Text = "Cannot Divide By Zero";
-                    eqn_screen.Text = calculation_one + "/" + "0" + " = " + "ERROR"; 
+                    eqn_screen.Text = calculation_one + "/" + "0" + " = " + "ERROR";
 
                 }
+            }
+            else if (operation == '^')
+            {
+                equals = Math.Pow(input1, input2);
+                ans_screen.Text = equals.ToString();
+                eqn_screen.Text = calculation_one + "^" + calculation_two + " = ";
+                user_input = equals.ToString();
             }
         }
     }
