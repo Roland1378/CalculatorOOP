@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace CalculatorOOP
 {
-    class Class1
+    class Buttons
     {
+
     }
 }
