@@ -18,6 +18,7 @@ namespace CalculatorOOP
         string calculation_two = string.Empty;
         char operation;
         double equals = 0.0;
+        Buttons btn = new Buttons();
 
         public basic_calculator()
         {
@@ -26,81 +27,58 @@ namespace CalculatorOOP
 
         private void number_one_Click(object sender, EventArgs e)
         {
-            ans_screen.Text = "";
-            user_input += '1';
-            ans_screen.Text += user_input;
+            btn.one();
 
         }
 
         private void number_two_Click(object sender, EventArgs e)
         {
-            ans_screen.Text = "";
-            user_input += '2';
-            ans_screen.Text += user_input;
+            btn.two();
         }
 
         private void number_three_Click(object sender, EventArgs e)
         {
-            ans_screen.Text = "";
-            user_input += '3';
-            ans_screen.Text += user_input;
+            btn.three();
         }
 
         private void number_four_Click(object sender, EventArgs e)
         {
-            ans_screen.Text = "";
-            user_input += '4';
-            ans_screen.Text += user_input;
+            btn.four();
         }
 
         private void number_five_Click(object sender, EventArgs e)
         {
-            ans_screen.Text = "";
-            user_input += '5';
-            ans_screen.Text += user_input;
+            btn.five();
         }
 
         private void number_six_Click(object sender, EventArgs e)
         {
-            ans_screen.Text = "";
-            user_input += '6';
-            ans_screen.Text += user_input;
+            btn.six();
         }
 
         private void number_seven_Click(object sender, EventArgs e)
         {
-            ans_screen.Text = "";
-            user_input += '7';
-            ans_screen.Text += user_input;
+            btn.seven();
         }
 
         private void number_eight_Click(object sender, EventArgs e)
         {
-            ans_screen.Text = "";
-            user_input += '8';
-            ans_screen.Text += user_input;
+            btn.eight();
         }
 
         private void number_nine_Click(object sender, EventArgs e)
         {
-            ans_screen.Text = "";
-            user_input += '9';
-            ans_screen.Text += user_input;
+            btn.nine();
         }
 
         private void number_zero_Click(object sender, EventArgs e)
         {
-            ans_screen.Text = "";
-            user_input += '0';
-            ans_screen.Text += user_input;
+            btn.zero();
         }
 
         private void decimal_point_Click(object sender, EventArgs e)
         {
-            ans_screen.Text = "";
-            user_input += '.';
-            ans_screen.Text += user_input;
-            decimal_point.Enabled = false;
+            btn.point();
         }
 
         private void addition_Click(object sender, EventArgs e)
@@ -152,22 +130,12 @@ namespace CalculatorOOP
         }
         private void del_text_Click(object sender, EventArgs e)
         {
-            ans_screen.Text = "";
-            eqn_screen.Text = "";
-            user_input = string.Empty;
-            calculation_one = string.Empty;
-            calculation_two = string.Empty;
+            btn.clear();
         }
 
         private void backspace_Click(object sender, EventArgs e)
         {
-            if (ans_screen.Text.Length > 0)
-            {
-                ans_screen.Text = ans_screen.Text.Remove(ans_screen.Text.Length - 1);
-                user_input = ans_screen.Text;
-            }
-            else
-                ans_screen.Text = "";
+            btn.backspace();
         }
  
         private void answer_Click(object sender, EventArgs e)
