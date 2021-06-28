@@ -83,50 +83,26 @@ namespace CalculatorOOP
 
         private void addition_Click(object sender, EventArgs e)
         {
-            calculation_one = user_input;
-            operation = '+';
-            ans_screen.Text = "+";
-            eqn_screen.Text = calculation_one + "" + operation;
-            user_input = string.Empty;
-            decimal_point.Enabled = true;
+            btn.add();
         }
 
         private void subtraction_Click(object sender, EventArgs e)
         {
-            calculation_one = user_input;
-            operation = '-';
-            ans_screen.Text = "-";
-            eqn_screen.Text = calculation_one + "" + operation;
-            user_input = string.Empty;
-            decimal_point.Enabled = true;
+            btn.sub();
         }
 
         private void multiplication_Click(object sender, EventArgs e)
         {
-            calculation_one = user_input;
-            operation = '*';
-            ans_screen.Text = "*";
-            eqn_screen.Text = calculation_one + "" + operation;
-            user_input = string.Empty;
-            decimal_point.Enabled = true;
+            btn.mul();
         }
 
         private void division_Click(object sender, EventArgs e)
         {
-            calculation_one = user_input;
-            operation = '/';
-            ans_screen.Text = "/";
-            eqn_screen.Text = calculation_one + "" + operation;
-            user_input = string.Empty;
-            decimal_point.Enabled = true;
+            btn.div();
         }
         private void exponent_Click(object sender, EventArgs e)
         {
-            calculation_one = user_input;
-            operation = '^';
-            ans_screen.Text = "^";
-            eqn_screen.Text = calculation_one + "" + operation;
-            user_input = string.Empty;
+            btn.exp();
         }
         private void del_text_Click(object sender, EventArgs e)
         {

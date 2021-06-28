@@ -11,11 +11,16 @@ namespace CalculatorOOP
         string user_input = string.Empty;
         string calculation_one = string.Empty;
         string calculation_two = string.Empty;
+        double equals = 0.0;
+        char operations;
+        double input1, input2;
+
+        public char operation { get => operations; set => operations = value; }
 
         public void one()
         {
             basic_calculator.ActiveForm.Controls["ans_screen"].Text = "";
-            user_input += '1' ;
+            user_input += '1';
             basic_calculator.ActiveForm.Controls["ans_screen"].Text += user_input;
         }
         public void two()
@@ -99,6 +104,51 @@ namespace CalculatorOOP
                 calculation_one = string.Empty;
                 calculation_two = string.Empty;
             }
+        }
+        public void add()
+        {
+            calculation_one = user_input;
+            operation = '+';
+            basic_calculator.ActiveForm.Controls["ans_screen"].Text = "+";
+            basic_calculator.ActiveForm.Controls["eqn_screen"].Text = calculation_one + "" + operation;
+            user_input = string.Empty;
+            basic_calculator.ActiveForm.Controls["decimal_point"].Enabled = true;
+        }
+        public void sub()
+        {
+            calculation_one = user_input;
+            operation = '-';
+            basic_calculator.ActiveForm.Controls["ans_screen"].Text = "-";
+            basic_calculator.ActiveForm.Controls["eqn_screen"].Text = calculation_one + "" + operation;
+            user_input = string.Empty;
+            basic_calculator.ActiveForm.Controls["decimal_point"].Enabled = true;
+        }
+        public void mul()
+        {
+            calculation_one = user_input;
+            operation = '*';
+            basic_calculator.ActiveForm.Controls["ans_screen"].Text = "*";
+            basic_calculator.ActiveForm.Controls["eqn_screen"].Text = calculation_one + "" + operation;
+            user_input = string.Empty;
+            basic_calculator.ActiveForm.Controls["decimal_point"].Enabled = true;
+        }
+        public void div()
+        {
+            calculation_one = user_input;
+            operation = '/';
+            basic_calculator.ActiveForm.Controls["ans_screen"].Text = "/";
+            basic_calculator.ActiveForm.Controls["eqn_screen"].Text = calculation_one + "" + operation;
+            user_input = string.Empty;
+            basic_calculator.ActiveForm.Controls["decimal_point"].Enabled = true;
+        }
+        public void exp()
+        {
+            calculation_one = user_input;
+            operation = '^';
+            basic_calculator.ActiveForm.Controls["ans_screen"].Text = "^";
+            basic_calculator.ActiveForm.Controls["eqn_screen"].Text = calculation_one + "" + operation;
+            user_input = string.Empty;
+            basic_calculator.ActiveForm.Controls["decimal_point"].Enabled = true;
         }
     }
 }
