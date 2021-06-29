@@ -13,11 +13,6 @@ namespace CalculatorOOP
 
     public partial class basic_calculator : Form
     {
-        string user_input = string.Empty;
-        string calculation_one = string.Empty;
-        string calculation_two = string.Empty;
-        char operation;
-        double equals = 0.0;
         Buttons btn = new Buttons();
 
         public basic_calculator()
@@ -116,55 +111,27 @@ namespace CalculatorOOP
  
         private void answer_Click(object sender, EventArgs e)
         {
-            decimal_point.Enabled = true;
-            calculation_two = user_input;
-            double input1, input2;
-            double.TryParse(calculation_one, out input1);
-            double.TryParse(calculation_two, out input2);
+            btn.ans();
 
-            if (operation == '+')
+            if (btn.operation == '+')
             {
-                equals = input1 + input2;
-                ans_screen.Text = equals.ToString();
-                eqn_screen.Text = calculation_one + "+" + calculation_two + " = ";
-                user_input = equals.ToString();
+                btn.adding();
             }
-            else if (operation == '-')
+            else if (btn.operation == '-')
             {
-                equals = input1 - input2;
-                ans_screen.Text = equals.ToString();
-                eqn_screen.Text = calculation_one + "-" + calculation_two + " = ";
-                user_input = equals.ToString();
+                btn.subtracting();
             }
-            else if (operation == '*')
+            else if (btn.operation == '*')
             {
-                equals = input1 * input2;
-                ans_screen.Text = equals.ToString();
-                eqn_screen.Text = calculation_one + "*" + calculation_two + " = ";
-                user_input = equals.ToString();
+                btn.multiplying();
             }
-            else if (operation == '/')
+            else if (btn.operation == '/')
             {
-                if (input2 != 0)
-                {
-                    equals = input1 / input2;
-                    ans_screen.Text = equals.ToString();
-                    eqn_screen.Text = calculation_one + "/" + calculation_two + " = ";
-                    user_input = equals.ToString();
-                }
-                else
-                {
-                    ans_screen.Text = "Cannot Divide By Zero";
-                    eqn_screen.Text = calculation_one + "/" + "0" + " = " + "ERROR";
-
-                }
+                btn.dividing();
             }
-            else if (operation == '^')
+            else if (btn.operation == '^')
             {
-                equals = Math.Pow(input1, input2);
-                ans_screen.Text = equals.ToString();
-                eqn_screen.Text = calculation_one + "^" + calculation_two + " = ";
-                user_input = equals.ToString();
+                btn.raising();
             }
         }
     }

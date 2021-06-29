@@ -150,5 +150,56 @@ namespace CalculatorOOP
             user_input = string.Empty;
             basic_calculator.ActiveForm.Controls["decimal_point"].Enabled = true;
         }
+        public void ans()
+        {
+            basic_calculator.ActiveForm.Controls["decimal_point"].Enabled = true;
+            calculation_two = user_input;
+            double.TryParse(calculation_one, out input1);
+            double.TryParse(calculation_two, out input2);
+        }
+        public void adding()
+        {
+            equals = input1 + input2;
+            basic_calculator.ActiveForm.Controls["ans_screen"].Text = equals.ToString();
+            basic_calculator.ActiveForm.Controls["eqn_screen"].Text = calculation_one + "+" + calculation_two + " = ";
+            user_input = equals.ToString();
+        }
+        public void subtracting()
+        {
+            equals = input1 - input2;
+            basic_calculator.ActiveForm.Controls["ans_screen"].Text = equals.ToString();
+            basic_calculator.ActiveForm.Controls["eqn_screen"].Text = calculation_one + "-" + calculation_two + " = ";
+            user_input = equals.ToString();
+        }
+        public void multiplying()
+        {
+            equals = input1 * input2;
+            basic_calculator.ActiveForm.Controls["ans_screen"].Text = equals.ToString();
+            basic_calculator.ActiveForm.Controls["eqn_screen"].Text = calculation_one + "*" + calculation_two + " = ";
+            user_input = equals.ToString();
+        }
+        public void dividing()
+        {
+            if (input2 != 0)
+            {
+                equals = input1 / input2;
+                basic_calculator.ActiveForm.Controls["ans_screen"].Text = equals.ToString();
+                basic_calculator.ActiveForm.Controls["eqn_screen"].Text = calculation_one + "/" + calculation_two + " = ";
+                user_input = equals.ToString();
+            }
+            else
+            {
+                basic_calculator.ActiveForm.Controls["ans_screen"].Text = "Cannot Divide By Zero";
+                basic_calculator.ActiveForm.Controls["eqn_screen"].Text = calculation_one + "/" + "0" + " = " + "ERROR";
+
+            }
+        }
+        public void raising()
+        {
+            equals = Math.Pow(input1, input2);
+            basic_calculator.ActiveForm.Controls["ans_screen"].Text = equals.ToString();
+            basic_calculator.ActiveForm.Controls["eqn_screen"].Text = calculation_one + "^" + calculation_two + " = ";
+            user_input = equals.ToString();
+        }
     }
 }
